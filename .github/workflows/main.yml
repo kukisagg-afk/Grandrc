@@ -19,10 +19,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Настройка Android SDK и NDK r21e
+      - name: Настройка Android SDK 30 и NDK r21e
         uses: android-actions/setup-android@v3
         with:
-          packages: 'ndk;21.4.7075529'
+          packages: 'platforms;android-30 build-tools;30.0.2 ndk;21.4.7075529'
 
       - name: Переключение на Java 11 для Gradle
         uses: actions/setup-java@v4
@@ -41,3 +41,4 @@ jobs:
         with:
           name: Grand-Mobile-APK
           path: app/build/outputs/apk/debug/*.apk
+
