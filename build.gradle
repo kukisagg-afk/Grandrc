@@ -2,6 +2,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.4'
@@ -14,6 +15,8 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        // Добавлено для un7zip
+        maven { url 'https://maven.xdja.com/repository/maven-public/' }
     }
 }
 
