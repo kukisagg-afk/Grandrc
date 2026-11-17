@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <VideoView android:id="@+id/background_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/launcher_auth_back1" android:scaleType="fitXY" android:alpha="0.6" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/launcher_auth_front" android:scaleType="fitXY" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/button_vk" android:layout_width="@dimen/_113sdp" android:layout_height="@dimen/_40sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.05" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.844" app:srcCompat="@drawable/launcher_vk_button" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/button_discord" android:layout_width="@dimen/_98sdp" android:layout_height="@dimen/_40sdp" android:layout_marginStart="@dimen/_7sdp" app:layout_constraintBottom_toBottomOf="@+id/button_vk" app:layout_constraintStart_toEndOf="@+id/button_vk" app:layout_constraintTop_toTopOf="@+id/button_vk" app:layout_constraintVertical_bias="0.0" app:srcCompat="@drawable/launcher_discord_button" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_guest"
+        android:layout_width="@dimen/_84sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_discord"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844"
+        app:srcCompat="@drawable/launcher_guest_button" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_guest_help"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_49sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:layout_constraintBottom_toTopOf="@+id/button_guest"
+        app:layout_constraintEnd_toEndOf="@+id/button_guest"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/button_guest"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/launcher_guest_button_help" />
+</androidx.constraintlayout.widget.ConstraintLayout>

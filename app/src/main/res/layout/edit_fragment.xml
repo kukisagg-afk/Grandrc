@@ -1,0 +1,32 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:clipToPadding="false">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText"
+        android:layout_width="143dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+
+        android:backgroundTint="#ff8b828f"
+        android:ems="10"
+        android:fontFamily="@font/akrobat_bold"
+        android:gravity="center"
+        android:hint="userlogin"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#ff8b828f"
+        android:textCursorDrawable="@drawable/launcher_login_cursor"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <VideoView
+        android:id="@+id/videoView5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+
+        android:backgroundTint="#ff8b828f"
+        android:ems="10"
+        android:fontFamily="@font/akrobat_bold"
+        android:gravity="center|left"
+        android:hint="Например, very_studio"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#ff8b828f"
+        android:textCursorDrawable="@drawable/launcher_login_cursor"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/reinstallGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/change_login_help"
+        app:layout_constraintTop_toBottomOf="@+id/change_login_help" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
+        android:src="@drawable/launcher_select_character_back" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/launcher_settings_front" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/_23sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/settings_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="НАСТРОЙКА" android:fontFamily="@font/akrobat_bold" android:layout_marginStart="@dimen/_20sdp" app:layout_constraintBottom_toBottomOf="@+id/settings_back_button" app:layout_constraintStart_toEndOf="@+id/settings_back_button" app:layout_constraintTop_toTopOf="@+id/settings_back_button" app:layout_constraintVertical_bias="1.0" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/settings_back_button" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginStart="@dimen/_15sdp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/launcher_login_back_button" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vk"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:srcCompat="@drawable/launcher_vk_button" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/discord"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vk"
+        app:layout_constraintEnd_toEndOf="@+id/social_media_help"
+        app:layout_constraintStart_toEndOf="@+id/vk"
+        app:layout_constraintTop_toTopOf="@+id/vk"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/launcher_discord_button" />
+
+    <LinearLayout android:orientation="vertical" android:id="@+id/settings_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_20sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/settings_header" app:layout_constraintVertical_bias="0.2">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/menu_account_tab" android:layout_width="@dimen/_130sdp" android:layout_height="@dimen/_37sdp" android:layout_marginTop="@dimen/_3sdp" app:srcCompat="@drawable/launcher_settings_account_en" />
+
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/menu_common_tab" android:layout_width="@dimen/_130sdp" android:layout_height="@dimen/_37sdp" android:layout_marginTop="@dimen/_3sdp" app:srcCompat="@drawable/launcher_settings_common_dis" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/menu_graphics_tab"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/launcher_settings_graphics_dis" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/change_login_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="92dp"
+        android:alpha="0.4"
+        android:fontFamily="@font/akrobat_semi_bold"
+        android:letterSpacing="0.1"
+        android:text="ИЗМЕНЕНИЕ ЛОГИНА"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/settings_menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/social_media_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:alpha="0.4"
+        android:fontFamily="@font/akrobat_semi_bold"
+        android:letterSpacing="0.1"
+        android:text="ПРИВЯЗКА СОЦИАЛЬНЫХ СЕТЕЙ"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintBottom_toTopOf="@+id/vk"
+        app:layout_constraintEnd_toEndOf="@+id/reinstallGame"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/reinstallGame" />
+
+    <TextView
+        android:id="@+id/rechecking_files_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="108dp"
+        android:alpha="0.4"
+        android:fontFamily="@font/akrobat_semi_bold"
+        android:letterSpacing="0.1"
+        android:text="ПОЛНАЯ ПРОВЕРКА ФАЙЛОВ"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/settings_menu"
+        app:layout_constraintTop_toTopOf="@+id/settings_menu" />
+
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/reinstallGame" android:layout_width="@dimen/_200sdp" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_5sdp" android:text="ПРОВЕРИТЬ" app:layout_constraintStart_toStartOf="@+id/rechecking_files_help" app:layout_constraintTop_toBottomOf="@+id/rechecking_files_help" app:srcCompat="@drawable/launcher_recheck_files" />
+    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/white" android:id="@+id/game_version_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="ВЕРСИЯ КЛИЕНТА: 1.1, ВЕРСИЯ СБОРКИ: 89" android:alpha="0.4" android:fontFamily="@font/akrobat_semi_bold" android:letterSpacing="0.1" app:layout_constraintStart_toStartOf="@+id/reinstallGame" app:layout_constraintTop_toBottomOf="@+id/reinstallGame" />
+
+    <ImageView
+        android:id="@+id/sorry"
+        android:layout_width="630dp"
+        android:layout_height="263dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sorry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <VideoView android:id="@+id/background_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/launcher_select_character_back" android:scaleType="fitXY" android:alpha="0.6" />
+
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/account_back_button" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginStart="@dimen/_15sdp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/launcher_login_back_button" />
+    <TextView android:textSize="@dimen/_23sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/account_header_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ЛИЧНЫЙ КАБИНЕТ" android:fontFamily="@font/akrobat_bold" android:layout_marginStart="@dimen/_20sdp" app:layout_constraintBottom_toBottomOf="@+id/account_back_button" app:layout_constraintStart_toEndOf="@+id/account_back_button" app:layout_constraintTop_toTopOf="@+id/account_back_button" app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/player_level_back" android:layout_width="@dimen/_130sdp" android:layout_height="@dimen/_150sdp" android:layout_marginTop="12.0dip" android:layout_marginStart="36.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/account_header_help" app:srcCompat="@drawable/launcher_account_slot" />
+
+    <TextView android:textSize="@dimen/_55sdp" android:textColor="@color/white" android:id="@+id/player_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25" android:fontFamily="@font/akrobat_bold" app:layout_constraintBottom_toBottomOf="@+id/player_level_back" app:layout_constraintEnd_toEndOf="@+id/player_level_back" app:layout_constraintStart_toStartOf="@+id/player_level_back" app:layout_constraintTop_toTopOf="@+id/player_level_back" app:layout_constraintVertical_bias="0.35" />
+    <TextView android:textSize="@dimen/_20sdp" android:textColor="#b3ffffff" android:id="@+id/player_sub_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13 / 44" android:fontFamily="@font/akrobat_semi_bold" app:layout_constraintBottom_toBottomOf="@+id/player_level_back" app:layout_constraintEnd_toEndOf="@+id/player_level_back" app:layout_constraintStart_toStartOf="@+id/player_level_back" app:layout_constraintTop_toBottomOf="@+id/player_level" app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/played_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="242"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="242dp" />
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:id="@+id/played_hours_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Отыграно часов" android:fontFamily="@font/akrobat_semi_bold" android:layout_marginStart="@dimen/_6sdp" app:layout_constraintBottom_toBottomOf="@+id/played_hours" app:layout_constraintStart_toEndOf="@+id/played_hours" app:layout_constraintTop_toTopOf="@+id/played_hours" app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/player_promo_button"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_103sdp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/played_hours"
+        app:srcCompat="@drawable/launcher_account_create_promo"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/promo_back_gradient" android:layout_width="133.0dip" android:layout_height="101.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@+id/player_promo_button" app:layout_constraintStart_toStartOf="@+id/player_promo_button" app:srcCompat="@drawable/launcher_account_gradient" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/promo_change_button" android:background="@drawable/launcher_account_promo_change" android:layout_width="92.0dip" android:layout_height="34.0dip" app:layout_constraintBottom_toBottomOf="@+id/promo_back_gradient" app:layout_constraintEnd_toEndOf="@+id/promo_back_gradient" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="@+id/promo_back_gradient" app:layout_constraintTop_toTopOf="@+id/promo_back_gradient" app:layout_constraintVertical_bias="0.75" />
+    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/white" android:id="@+id/promo_help_name" android:layout_width="wrap_content" android:layout_height="@dimen/_16sdp" android:text="ПРОМОКОД" android:lineSpacingExtra="@dimen/_2sdp" android:fontFamily="@font/akrobat_semi_bold" android:letterSpacing="0.2" app:layout_constraintEnd_toEndOf="@+id/promo_back_gradient" app:layout_constraintStart_toStartOf="@+id/promo_back_gradient" app:layout_constraintTop_toTopOf="@+id/promo_back_gradient" />
+    <TextView android:textSize="@dimen/_14sdp" android:textColor="#ffffd634" android:id="@+id/promo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GRANDKEVIN" android:lineSpacingExtra="@dimen/_2sdp" android:fontFamily="@font/akrobat_bold" app:layout_constraintEnd_toEndOf="@+id/promo_back_gradient" app:layout_constraintHorizontal_bias="0.509" app:layout_constraintStart_toStartOf="@+id/promo_back_gradient" app:layout_constraintTop_toBottomOf="@+id/promo_help_name" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/promo_menu_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="rules_bottom,promo_close_button,promo_edit,             promo_edit_button,create_character_header,promo_gift_icon,promo_member_icon,             promo_help_text,help_icon,promo_help_text_bottom,promo_members_text,promo_members_help,             promo_progress_scroll,promo_gradient,promo_progress_scroll_gifts" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rules_bottom"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/_20sdp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/launcher_rules_bottom" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/promo_close_button"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        app:srcCompat="@drawable/launcher_close_button" />
+    <androidx.appcompat.widget.AppCompatEditText android:textSize="@dimen/_18sdp" android:textColor="@color/white" android:textColorHint="#ff8b828f" android:gravity="center|left" android:id="@+id/promo_edit" android:paddingBottom="@dimen/_22sdp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="168.0dip" android:hint="Например, GRANDKEVIN" android:ems="10" android:singleLine="true" android:maxLength="10" android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890" android:inputType="text" android:imeOptions="actionDone|flagNoExtractUi" android:textCursorDrawable="@drawable/launcher_login_cursor" android:fontFamily="@font/akrobat_semi_bold" android:layout_marginStart="@dimen/_12sdp" android:backgroundTint="#ff8b828f" app:layout_constraintStart_toStartOf="@+id/played_hours" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.4" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/promo_edit_button" android:layout_width="@dimen/_120sdp" android:layout_height="@dimen/_50sdp" android:layout_marginBottom="@dimen/_2sdp" android:layout_marginStart="-6.0dip" app:layout_constraintBottom_toBottomOf="@+id/promo_edit" app:layout_constraintStart_toEndOf="@+id/promo_edit" app:layout_constraintTop_toTopOf="@+id/promo_edit" app:srcCompat="@drawable/launcher_promo_change_button" />
+
+    <TextView
+        android:id="@+id/create_character_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:fontFamily="@font/akrobat_bold"
+        android:gravity="center"
+        android:text="СОЗДАНИЕ ПРОМОКОДА"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_23sdp"
+        app:layout_constraintStart_toStartOf="@+id/played_hours"
+        tools:layout_editor_absoluteY="82dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/promo_gift_icon" android:visibility="invisible" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" android:layout_marginStart="@dimen/_12sdp" app:layout_constraintBottom_toBottomOf="@+id/create_character_header" app:layout_constraintStart_toEndOf="@+id/create_character_header" app:layout_constraintTop_toTopOf="@+id/create_character_header" app:layout_constraintVertical_bias="0.0" app:srcCompat="@drawable/launcher_gift_icon" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/promo_member_icon" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" android:layout_marginStart="@dimen/_12sdp" app:layout_constraintBottom_toBottomOf="@+id/create_character_header" app:layout_constraintStart_toEndOf="@+id/create_character_header" app:layout_constraintTop_toTopOf="@+id/create_character_header" app:layout_constraintVertical_bias="0.5" app:srcCompat="@drawable/launcher_member_icon" />
+    <TextView android:textColor="#ffffd634" android:id="@+id/promo_help_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Приглашайте игроков\nи получайте подарки" android:layout_marginStart="@dimen/_7sdp" app:layout_constraintBottom_toBottomOf="@+id/promo_gift_icon" app:layout_constraintStart_toEndOf="@+id/promo_gift_icon" app:layout_constraintTop_toTopOf="@+id/promo_gift_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/help_icon"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="@+id/promo_edit"
+        app:layout_constraintTop_toBottomOf="@+id/promo_edit"
+        app:srcCompat="@drawable/launcher_help_button" />
+    <TextView android:textColor="@color/white" android:id="@+id/promo_help_text_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Используйте не более 10 символов" android:fontFamily="@font/akrobat_semi_bold" android:layout_marginStart="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="@+id/help_icon" app:layout_constraintStart_toEndOf="@+id/help_icon" app:layout_constraintTop_toTopOf="@+id/help_icon" />
+    <TextView android:textSize="@dimen/_20sdp" android:textColor="@color/white" android:id="@+id/promo_members_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:layout_marginStart="@dimen/_12sdp" app:layout_constraintBottom_toBottomOf="@+id/promo_member_icon" app:layout_constraintStart_toEndOf="@+id/promo_member_icon" app:layout_constraintTop_toTopOf="@+id/promo_member_icon" app:layout_constraintVertical_bias="0.5" />
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="#ffffd634" android:id="@+id/promo_members_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ПРИГЛАШЁННЫХ" android:layout_marginStart="@dimen/_12sdp" app:layout_constraintBottom_toBottomOf="@+id/promo_members_text" app:layout_constraintStart_toEndOf="@+id/promo_members_text" app:layout_constraintTop_toTopOf="@+id/promo_members_text" app:layout_constraintVertical_bias="0.5" />
+
+    <ScrollView
+        android:id="@+id/promo_progress_scroll_gifts"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="0.0dip"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintHeight_percent="0.6">
+
+        <LinearLayout
+            android:id="@+id/prizes_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/promo_gradient"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:scaleType="fitXY"
+        app:layout_constraintHeight_percent="0.2"
+        app:srcCompat="@drawable/launcher_rules_gradient" />
+</androidx.constraintlayout.widget.ConstraintLayout>

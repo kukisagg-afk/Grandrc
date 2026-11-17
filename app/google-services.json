@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "246528127792",
+    "firebase_url": "https://br-new-test-default-rtdb.firebaseio.com",
+    "project_id": "br-new-test",
+    "storage_bucket": "br-new-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246528127792:android:03bfa4a60d953c17c28ef5",
+        "android_client_info": {
+          "package_name": "com.grand.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246528127792-3nk5n810ep6k550ceh16na79hvgsj8gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2I2qILf3ByJDpzSYHxgvGNNwCegc1ae4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246528127792-3nk5n810ep6k550ceh16na79hvgsj8gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
