@@ -15,9 +15,8 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
-        // Добавлено для un7zip
-        maven { url 'https://maven.xdja.com/repository/maven-public/' }
     }
+}
 }
 
 task clean(type: Delete) {
