@@ -49,5 +49,5 @@ dependencies {
     implementation 'com.github.amitshekhariitbhu:PRDownloader:1.0.2'
     
     // Вместо un7zip
-    implementation 'com.hzy:un7zip:1.7.1'
+    implementation files('libs/libp7zip-release.aar')'
 }
