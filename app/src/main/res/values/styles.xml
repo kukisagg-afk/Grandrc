@@ -67,7 +67,7 @@
 </style>
 
     <style name="AppTheme.NoActionBar">
-    <item name="android:background">@drawable/ic_arrow_back:item>
+    <item name="android:background">@drawable/ic_arrow_back</item>
     <item name="android:windowContentOverlay">@null</item>
     <item name="android:windowFullscreen">true</item>
     <item name="windowActionBar">false</item>
