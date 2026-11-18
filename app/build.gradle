@@ -38,16 +38,11 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation "com.github.skydoves:colorpickerpreference:2.0.0"
 
-    // --- Новые библиотеки (вместо тех, что перестали работать) ---
-    // Вместо MaskedEditText
+    // --- Новые библиотеки (замены) ---
     implementation 'io.github.vicmikhailau:MaskedEditText:5.0.3'
-    
-    // Вместо CircleProgressBar
     implementation 'io.github.dinuscxj:circleprogressbar:1.4.1'
-    
-    // Вместо PRDownloader
     implementation 'com.github.amitshekhariitbhu:PRDownloader:1.0.2'
     
-    // Вместо un7zip
-    implementation files('libs/libp7zip-release.aar')'
+    // --- Локальный файл ---
+    implementation files('libs/libp7zip-release.aar')
 }
